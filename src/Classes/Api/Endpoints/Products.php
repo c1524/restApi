@@ -2,17 +2,29 @@
 namespace RestApi\Api\Endpoints;
 
 use \RestApi\Api\ApiEndpoint;
+use \RestApi\Utils;
 
 
 class Products extends ApiEndpoint
 {
 
-    public function __construct()
+    public function get()
     {
+        return 'get result';
     }
 
-    public function render()
+    public function post()
     {
-        return 'ok2';
+        return 'post result';
+    }
+
+    public function patch()
+    {
+        return 'patch result';
+    }
+
+    public function delete()
+    {
+        return 'delete result';
     }
 }
