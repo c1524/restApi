@@ -28,7 +28,9 @@ class Api
             throw new \Exception('Not allowed', 403);
         }
 
-        /** @var \RestApi\Api\ApiEndpoint $endpointObject */
+        /**
+         * @var \RestApi\Api\ApiEndpoint $endpointObject
+         */
         $endpointObject = new $className();
         return $endpointObject->render();
     }
